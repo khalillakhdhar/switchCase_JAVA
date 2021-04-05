@@ -1,11 +1,18 @@
 package switchCase;
 
+import ifElse.Division;
+
 public class Test {
-//
-//	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 //System.out.print(intervale());
-//	}
+		
+		
+		Division d=new Division();
+		d.setA(336);
+		System.out.println(d.toString());
+	}
 //static int intervale()
 //{
 //int month=7;
