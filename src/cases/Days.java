@@ -3,9 +3,18 @@ package cases;
 public class Days {
 private int day;
 private int year;
+private int month;
 
 
 
+
+public int getMonth() {
+	return month;
+}
+
+public void setMonth(int month) {
+	this.month = month;
+}
 
 public int getYear() {
 	return year;
@@ -28,7 +37,7 @@ public Days(int day) {
 }
 
 
-String dayName()
+public String dayName()
 {
 	switch (this.day) {
 	case 1: 
@@ -51,6 +60,36 @@ String dayName()
 
 
 }
+public boolean bisextile()
+{
+return year%4==0;	
+}
+int intervale()
+{
+switch(month)
+{
+case 1,3,5,7,8,10,12:
+	return 31;
+case 2:
+	{if(bisextile())
+	return 29;
+	else
+		return 28;
+	}
+		
+case 4,6,9,11:
+	return 30;
+default: 
+	return 30;
 
+
+}
+}
+
+@Override
+public String toString() {
+	return "Days [day=" + day + ", year=" + year + ", month=" + month + ", getMonth()=" + getMonth() + ", getYear()="
+			+ getYear() + "]";
+}
 
 }
