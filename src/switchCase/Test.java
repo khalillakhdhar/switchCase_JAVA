@@ -1,5 +1,6 @@
 package switchCase;
 
+import cases.Days;
 import ifElse.Division;
 
 public class Test {
@@ -9,25 +10,15 @@ public class Test {
 //System.out.print(intervale());
 		
 		
-		Division d=new Division();
-		d.setA(336);
+//		Division d=new Division();
+//		d.setA(336);
+//		System.out.println(d.toString());
+		
+		Days d=new Days(6);
+		d.setYear(2021);
+		d.setMonth(7);
+		System.out.println(d.dayName());
 		System.out.println(d.toString());
 	}
-//static int intervale()
-//{
-//int month=7;
-//switch(month)
-//{
-//case 1,3,5,7,8,10,12:
-//	return 31;
-//case 2:
-//	return 28;
-//case 4,6,9,11:
-//	return 30;
-//default: 
-//	return 30;
-//
-//
-//}
-//}
+
 }
