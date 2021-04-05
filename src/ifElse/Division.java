@@ -33,4 +33,10 @@ else
 
 }
 
+@Override
+public String toString() {
+	return "Division [a=" + a + ", parité=" + parite() + ", divisibilité =" + divisible() + "]";
+}
+
+
 }
